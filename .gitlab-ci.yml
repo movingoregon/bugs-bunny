@@ -13,6 +13,5 @@ deploy_stage:
   only:
     - master
   script:
-    - rm ./package-lock.json
     - npm install
     - ./node_modules/@angular/cli/bin/ng build --progress false --prod
