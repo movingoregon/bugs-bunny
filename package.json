@@ -27,6 +27,7 @@
     "@ngrx/effects": "^5.0.1",
     "@ngrx/store": "^5.0.0",
     "core-js": "^2.4.1",
+    "ng5-yt-player": "^1.0.2",
     "postcss-merge-rules": "^2.1.2",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"

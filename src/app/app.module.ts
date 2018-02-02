@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { YouTubePlayerModule } from 'ng5-yt-player';
 
 
 import { AppComponent } from './app.component';
@@ -12,7 +13,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    YouTubePlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
