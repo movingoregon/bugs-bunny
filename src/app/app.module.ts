@@ -1,12 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
-import { YouTubePlayerModule } from 'ng5-yt-player';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MatSidenavModule, MatToolbarModule, MatIconModule } from '@angular/material';
+
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { WebModule } from './components/web/web.module';
+import { CommonModule } from './common/common.module';
+import { WebContainerComponent } from './components/web/web-container/web-container.component';
 
 export const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -30,10 +32,8 @@ export const appRoutes: Routes = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatSidenavModule,
-    MatToolbarModule,
-    MatIconModule,
-    YouTubePlayerModule,
+    WebModule,
+    CommonModule,
     RouterModule.forRoot(
       appRoutes
     )

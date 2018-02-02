@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import { appRoutes } from './app.module';
 import { HomeComponent } from './components/home/home.component';
+import { WebModule } from './components/web/web.module';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -14,8 +15,8 @@ describe('AppComponent', () => {
         AppComponent,
         HomeComponent
       ],
-      providers: [Location],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA]
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      providers: [Location]
     }).compileComponents();
   }));
 
