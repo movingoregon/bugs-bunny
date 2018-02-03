@@ -1,12 +1,42 @@
+:root {
+    --main-bg-balck: #333333;
+    --main-bg-gray-gradient: linear-gradient(to bottom, #4f4e4e, #333333);
+    --main-bg-gray-repeating-linear-gradient: repeating-linear-gradient(to bottom, #333333, #4f4e4e);
+}
+
 .side-nav-container {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    background: var(--main-bg-gray-gradient);
 }
 
 .side-nav {
-    width: 300px;
-    background: #333333;
+    width: 325px;
+    background: var(--main-bg-gray-repeating-linear-gradient);
+}
+
+.tabContainer {
+    height: calc(100vh - 48px);
+    overflow-y: auto;
+}
+
+.mat-tab-header {
+    background:var(--main-bg-balck);
+    opacity: 0.6;
+    border-bottom: 1px solid white;
+}
+
+.mat-tab-label {
+    color: white;
+}
+
+.mat-tab-label.mat-tab-label-active {
+    background: var(--main-bg-gray-repeating-linear-gradient);
+}
+
+.mat-ink-bar {
+    background: var(--main-bg-gray-repeating-linear-gradient);
 }

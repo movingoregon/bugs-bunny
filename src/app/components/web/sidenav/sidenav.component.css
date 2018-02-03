@@ -1,9 +1,23 @@
+:root {
+    --main-bg-balck: #333333;
+    --main-bg-gray-repeating-linear-gradient: repeating-linear-gradient(to bottom, #333333, #4f4e4e);
+
+}
 .side-nav-toolbar {
-    background-color: #e53935
+    background-color: #e53935;
+    height: 48px;
+    border-bottom: 1px solid white;
 }
 
 .example-fill-remaining-space {
     /* This fills the remaining space, by using flexbox. 
        Every toolbar row uses a flexbox row layout. */
     flex: 1 1 auto;
+}
+
+.side-nav-toolbar-btm {
+    background: var(--main-bg-gray-repeating-linear-gradient);
+    height: 36px;
+    position: fixed;
+    bottom: 0;
 }
