@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { WebContainerComponent } from './web-container/web-container.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
-import { CommonModule } from '../../common/common.module';
-import { MatToolbarModule, MatSidenavModule } from '@angular/material';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
     imports: [
-        CommonModule,
+        SharedModule
     ],
     declarations: [
         SidenavComponent,

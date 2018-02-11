@@ -24,19 +24,22 @@
 }
 
 .mat-tab-header {
-    background:var(--main-bg-balck);
-    opacity: 0.6;
-    border-bottom: 1px solid white;
+    background: #e53935;
+    opacity: 1;
+    color: white!important;
 }
 
 .mat-tab-label {
-    color: white;
+    color: white!important;
 }
 
+
+/* 
 .mat-tab-label.mat-tab-label-active {
-    background: var(--main-bg-gray-repeating-linear-gradient);
-}
+    background: white!important;
+} */
 
-.mat-ink-bar {
-    background: var(--main-bg-gray-repeating-linear-gradient);
+.mat-tab-group.mat-primary .mat-ink-bar,
+.mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background: white!important;
 }

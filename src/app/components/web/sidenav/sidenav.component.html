@@ -1,10 +1,12 @@
 <mat-toolbar color="warn" class="side-nav-toolbar">
   <img src="../assets/player_logo_2.png" height="46px">
-  <span>Telugu Now</span>
+  <!-- <span style="padding-left:20px;">Telugu Now</span> -->
+  <h1 class="pl-3">Telugu Now</h1>
   <span class="fill-remaining-space"></span>
 </mat-toolbar>
-<ng5-youtube-player [videoId]="" [height]="210" [width]="325" [playerParams]="{}">
-</ng5-youtube-player>
+<mat-divider></mat-divider>
+<tnow-player [height]="210" [width]="325"></tnow-player>
+<mat-divider></mat-divider>
 
 Here comes play list component
 <mat-toolbar color="warn" class="side-nav-toolbar-btm">

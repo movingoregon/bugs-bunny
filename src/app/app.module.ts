@@ -7,8 +7,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { WebModule } from './components/web/web.module';
-import { CommonModule } from './common/common.module';
-import { WebContainerComponent } from './components/web/web-container/web-container.component';
 
 export const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -33,7 +31,6 @@ export const appRoutes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     WebModule,
-    CommonModule,
     RouterModule.forRoot(
       appRoutes
     )

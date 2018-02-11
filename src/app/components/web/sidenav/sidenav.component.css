@@ -1,12 +1,11 @@
 :root {
     --main-bg-balck: #333333;
     --main-bg-gray-repeating-linear-gradient: repeating-linear-gradient(to bottom, #333333, #4f4e4e);
-
 }
+
 .side-nav-toolbar {
     background-color: #e53935;
     height: 48px;
-    border-bottom: 1px solid white;
 }
 
 .example-fill-remaining-space {
@@ -20,4 +19,8 @@
     height: 36px;
     position: fixed;
     bottom: 0;
+}
+
+.mat-divider {
+    background-color: white;
 }
