@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { PlayerComponent } from './player/player.component';
 import { YouTubePlayerModule } from 'ng5-yt-player';
 import { MatSidenavModule, MatToolbarModule, MatIconModule, MatTabsModule, MatDividerModule } from '@angular/material';
+import { AppStoreModule } from '../../common/store/store.module';
 
 @NgModule({
     imports: [
@@ -10,7 +11,8 @@ import { MatSidenavModule, MatToolbarModule, MatIconModule, MatTabsModule, MatDi
         MatIconModule,
         MatTabsModule,
         MatDividerModule,
-        YouTubePlayerModule
+        YouTubePlayerModule,
+        AppStoreModule
     ],
     declarations: [
         PlayerComponent

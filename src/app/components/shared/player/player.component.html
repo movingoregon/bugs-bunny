@@ -1,2 +1,1 @@
-<ng5-youtube-player [videoId]="'M7lc1UVf-VE'" [height]="height" [width]="width" [playerParams]="params">
-</ng5-youtube-player>
+<ng5-youtube-player [height]="height" [width]="width" [playerParams]="params" (playerReadyEvent)="setupPlayer($event)" (playerStateChangeEvent)="playerStateChange($event)"></ng5-youtube-player>
